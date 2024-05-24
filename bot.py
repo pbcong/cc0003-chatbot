@@ -59,8 +59,7 @@ if "text_embedding" not in st.session_state:
     sysmsg = f"{persona} {task} {context} {condition}"
     st.session_state['conversations'] = [SystemMessage(content=sysmsg)]
 
-    greetings = '''Hello my name is Alice, and I am a Automated Teaching Assistant for SC1015 - Data Science & AI. I am here to help, feel free to ask any questions.
-    '''
+    greetings = '''Hello my name is Bin, and I am a Automated Teaching Assistant for CC0003 - Ethics and Civics in a Multicultural World. I am here to help, feel free to ask any questions.'''
     st.session_state['conversations'].append(AIMessage(content=greetings))
     st.session_state['msgtypes'] = {
         HumanMessage: "Human", AIMessage: "AI", SystemMessage: "System"}
